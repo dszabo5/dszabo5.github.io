@@ -440,7 +440,7 @@ main {
 
 .social-item .social-link {
   color: var(--light-gray-70);
-  font-size: 18px;
+  font-size: 17px;
 }
 
 
@@ -1757,15 +1757,16 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   /**
    * SIDEBAR
+   CHANGED TOP AND PADDING TO 30 instead of 60
    */
 
   .sidebar {
     position: sticky;
-    top: 60px;
+    top: 30px;
     max-height: max-content;
     height: 100%;
     margin-bottom: 0;
-    padding-top: 60px;
+    padding-top: 30px;
     z-index: 1;
   }
 
