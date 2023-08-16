@@ -719,7 +719,7 @@ main {
 
 .modal-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
-.modal-avatar-box {
+.modal-icon-box {
   background: var(--bg-gradient-onyx);
   width: max-content;
   border-radius: 14px;
@@ -727,7 +727,7 @@ main {
   box-shadow: var(--shadow-2);
 }
 
-.modal-img-wrapper > img { display: none; }
+.modal-icon-wrapper { display: none; }
 
 .modal-title { margin-bottom: 4px; }
 
@@ -747,12 +747,12 @@ main {
 
 
 /**
- * #clients 
+ * #awards 
  */
 
-.clients { margin-bottom: 15px; }
+.awards { margin-bottom: 15px; }
 
-.clients-list {
+.awards-list {
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
@@ -767,18 +767,18 @@ main {
   scroll-padding-inline: 25px;
 }
 
-.clients-item {
+.awards-item {
   min-width: 50%;
   scroll-snap-align: start;
 }
 
-.clients-item img {
+.awards-item img {
   width: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.awards-item img:hover { filter: grayscale(0); }
 
 
 
@@ -1164,6 +1164,21 @@ textarea.form-input::-webkit-resizer { display: none; }
   #RESPONSIVE
 \*-----------------------------------*/
 
+@media (max-width: 580px)  {
+
+  /**
+   * courses 
+   */
+  
+   .courses-icon-box { 
+    width: 60px;
+    height: 60px;
+  }
+
+  .courses-item-title { transform: translate(0px, 0px); }
+
+}
+
 /**
  * responsive larger than 450px screen
  */
@@ -1171,22 +1186,10 @@ textarea.form-input::-webkit-resizer { display: none; }
 @media (min-width: 450px) {
 
   /**
-   * courses 
-   */
-   .courses-icon-box { 
-      width: 60px;
-      height: 60px;
-    }
-
-   .courses-item-title { transform: translate(0px, 0px); }
-
-  /**
-   * client
+   * awards
    */
 
-  .clients-item { min-width: calc(33.33% - 10px); }
-
-
+  .awards-item { min-width: calc(33.33% - 10px); }
 
   /**
    * #PORTFOLIO
@@ -1415,16 +1418,16 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 35px;
   }
 
-  /* clients */
+  /* awards */
 
-  .clients-list {
+  .awards-list {
     gap: 50px;
     margin: 0 -30px;
     padding: 45px;
     scroll-padding-inline: 45px;
   }
 
-  .clients-item { min-width: calc(33.33% - 35px); }
+  .awards-item { min-width: calc(33.33% - 35px); }
 
 
 
@@ -1674,9 +1677,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .courses-item { min-width: calc(50% - 15px); }
 
-  /* clients */
+  /* awards */
 
-  .clients-item { min-width: calc(25% - 38px); }
+  .awards-item { min-width: calc(25% - 38px); }
 
 
 
